@@ -1,0 +1,16 @@
+bmp=image/bmp
+css=text/css
+gif=image/gif
+htm=text/html
+html=text/html
+jpeg=image/jpeg
+jpg=image/jpeg
+js=application/x-javascript
+pdf=application/pdf
+php=application/x-httpd-php
+svg=image/svg+xml
+txt=text/plain
+xhtml=application/xhtml+xml
+xml=application/xml
+xslt=application/xslt+xml
+xul=application/vnd.mozilla.xul+xml

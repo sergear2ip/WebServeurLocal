@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RichText example</title>
+
+        <link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="src/richtext.min.css">
+        <script type="text/javascript" src="src/jquery.min.js"></script>
+        <script type="text/javascript" src="src/jquery.richtext.js"></script>
+    </head>
+    <body>
+        <div class="page-wrapper box-content" id="div1">
+<a href="test.php">Test PHP</a>
+            <textarea class="content" name="example"></textarea>
+
+        </div>
+
+		<script language="Javascript">
+
+function getDocumentSize() {
+	var size = $('.richText-editor').first().text().length;
+return size;
+		}
+$(document).ready(function() {
+	      // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	const searchParams = new URLSearchParams(window.location.search);
+
+		$('.content').richText({
+			imageUpload: false,
+			fileUpload: false,
+			videoEmbed: false,
+			urls: false,
+			removeStyles: false,
+			code: false,
+			table: false,
+			translations: {
+      'title': 'Titre',
+      'white': 'Blanc',
+      'black': 'Noir',
+      'brown': 'Marron',
+      'beige': 'Beige',
+      'darkBlue': 'Bleu foncé',
+      'blue': 'Bleu',
+      'lightBlue': 'Bleu clair',
+      'darkRed': 'Rouge foncé',
+      'red': 'Rouge',
+      'darkGreen': 'Vert foncé',
+      'green': 'Vert',
+      'purple': 'Violet',
+      'darkTurquois': 'Turquoise foncé',
+      'turquois': 'Turquoise',
+      'darkOrange': 'Orange foncé',
+      'orange': 'Orange',
+      'yellow': 'Jaune',
+      'imageURL': 'Image URL',
+      'fileURL': 'File URL',
+      'linkText': 'Link text',
+      'url': 'URL',
+      'size': 'Taille',
+      'responsive': 'Responsive',
+      'text': 'Texte',
+      'openIn': 'Ouvrir dans',
+      'sameTab': 'Same tab',
+      'newTab': 'New tab',
+      'align': 'Aligne',
+      'left': 'Gauche',
+      'justify': 'Justifier',
+      'center': 'Centrer',
+      'right': 'Droite',
+      'rows': 'Lignes',
+      'columns': 'Colonne',
+      'add': 'Ajouter',
+      'pleaseEnterURL': 'Please enter an URL',
+      'videoURLnotSupported': 'Video URL not supported',
+      'pleaseSelectImage': 'Please select an image',
+      'pleaseSelectFile': 'Please select a file',
+      'bold': 'Gras',
+      'italic': 'Italique',
+      'underline': 'Souligner',
+      'alignLeft': 'Aligner à gauche',
+      'alignCenter': 'Centrer',
+      'alignRight': 'Aligner à droite',
+      'addOrderedList': 'Liste trié',
+      'addUnorderedList': 'Liste non trié',
+      'addHeading': 'Titre',
+      'addFont': 'Police',
+      'addFontColor': 'Couleur police',
+      'addBackgroundColor': 'Couleur fond',
+      'addFontSize': 'Taille police',
+      'addImage': 'Add image',
+      'addVideo': 'Add video',
+      'addFile': 'Add file',
+      'addURL': 'Add URL',
+      'addTable': 'Add table',
+      'removeStyles': 'Remove styles',
+      'code': 'Show HTML code',
+      'undo': 'Annuler',
+      'redo': 'Rétablir',
+      'close': 'Fermer',
+      'save': 'Enregistrer'
+  },
+			saveOnBlur: 1000,
+			save: true,
+			saveCallback: function (editor, source, content) {
+if (confirm("Souhaitez-vous enregistrer ?","titre")){
+				$.post( searchParams.get('site')+".html?action=save", content );
+}
+			}
+		});
+	$( ".richText-editor" ).load( "http://localhost:8080/"+searchParams.get('site')+".html" );
+ });
+       </script>
+    </body>
+</html>
