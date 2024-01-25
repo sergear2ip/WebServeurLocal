@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebServeurLocal.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DocumentRoot" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files\AR2IP\WebServeurLocal\files</Value>
+    </Setting>
+    <Setting Name="ServeurPrefixe" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
