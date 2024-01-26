@@ -13,4 +13,9 @@ Application de tests
 * Les types MIME peuvent être ajoutés au fichier mimesType.txt chargé au démarrage du service
 
 * L'exemple de test supporte jQuery richtext et php 8.3 avec l'extension sqlite3
+* Vous pouvez configurer le fichier php.ini pour ajouter des extensions dans le répertoire "ext"
 * La methode POST ?site="filename" permet la lecture et l'écriture d'un fichier dans la racine des fichiers (attention aux droits d'écriture et à la localisation des fichiers)
+
+  # Utilisations
+  Limité à une utilisation locale (pas de sécurité)
+ 
