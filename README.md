@@ -21,7 +21,7 @@ Test Application
 # Usage
 Limited to local use (no security).
 
-![image](https://github.com/sergear2ip/WebServeurLocal/assets/97619122/8e0ac9bc-b55d-4914-aa5a-80aa4b0bb39a)
+🇫🇷
 Serveur Web minimaliste html, css, js et php
 # Repertoire sources
 ## Projet
