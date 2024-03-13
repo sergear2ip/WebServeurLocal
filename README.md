@@ -1,4 +1,26 @@
 # WebServeurLocal
+
+Minimalist web server with html, css, js, and php
+
+# Source Directory
+## Project
+Windows Service
+Visual Studio 2022
+.NET 4.5
+64-bit
+# Bin Directory
+Test Application
+* The Windows service "WebServeurLocal" is installed using the .NET Installutil.exe tool.
+* The .config file allows configuring the root of the files and the URL prefix.
+* MIME types can be added to the mimesType.txt file loaded at service startup.
+  
+* The test example supports jQuery richtext and php 8.3 with the sqlite3 extension.
+* You can configure the php.ini file to add extensions in the "ext" directory.
+*The POST method ?site="filename" allows reading and writing a file in the root of the files (pay attention to write permissions and file location).
+
+# Usage
+Limited to local use (no security).
+
 Serveur Web minimaliste html, css, js et php
 # Repertoire sources
 ## Projet
